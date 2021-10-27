@@ -143,9 +143,9 @@ void reverseArray(int* array, int n) {
     free(tmpArray);
 }
 
-clock_t calcDuration(clock_t start, clock_t end) {
-    // 取上限
-    return ((end - start) - 1) / CLOCKS_PER_SEC + 1;
+double calcDuration(clock_t start, clock_t end) {
+    // get cpu time used
+    return ((double) (end - start)) / CLOCKS_PER_SEC;
 }
 
 clock_t getTime() {

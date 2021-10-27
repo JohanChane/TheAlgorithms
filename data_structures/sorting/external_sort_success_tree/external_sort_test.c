@@ -45,7 +45,7 @@ static void testExternalSort() {
         return;
     }
 
-    printf("duration = %lfs\n", (double) calcDuration(start, end));
+    printf("duration = %lfs\n", calcDuration(start, end));
 
     runsDestroy(runs, K);
     queueDestroy(mergedRun);

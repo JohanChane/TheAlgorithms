@@ -30,7 +30,7 @@ static void testCirLinkedList() {
     }
     end = getTime();
     printf("size of list: %lu\n", cirLinkedListSize(list));
-    printf("duration = %lfs\n", (double) calcDuration(start, end));
+    printf("duration = %lfs\n", calcDuration(start, end));
 
     cirLinkedListDestroy(list);
 }

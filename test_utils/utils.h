@@ -21,7 +21,7 @@ void genRandomStrings(void* data, int row, int col, char lower, char upper);
 
 void reverseArray(int* array, int n);
 
-clock_t calcDuration(clock_t start, clock_t end);
+double calcDuration(clock_t start, clock_t end);
 clock_t getTime();
 
 #endif

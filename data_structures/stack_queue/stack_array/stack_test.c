@@ -27,7 +27,7 @@ static void testStack() {
 
     end = getTime();
     printf("size of stack: %d\n", stackSize(stack));
-    printf("duration = %lfs\n", (double) calcDuration(start, end));
+    printf("duration = %lfs\n", calcDuration(start, end));
 
     if (!areArraysSame(tmpArray, array, ARRAY_SIZE)) {
         fprintf(stderr, "Array aren't same.\n");

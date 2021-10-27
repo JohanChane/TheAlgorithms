@@ -39,7 +39,7 @@ static void testBinHeap() {
     }
     end = getTime();
     printBinHeap(binHeap);
-    printf("duration = %lfs\n", (double) calcDuration(start, end));
+    printf("duration = %lfs\n", calcDuration(start, end));
 
     // printArray(sortedArray, ARRAY_SIZE);
     if (checkArrayOrder(sortedArray, ARRAY_SIZE, ASC) < 0) {

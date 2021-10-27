@@ -48,7 +48,7 @@ static void testSplayTree() {
     }
     end = getTime();
     printSplayTree(splayTree);
-    printf("duration = %lfs\n", (double) calcDuration(start, end));
+    printf("duration = %lfs\n", calcDuration(start, end));
 
     splayTree = splayTreeMakeEmpty(splayTree);
 }

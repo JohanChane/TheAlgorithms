@@ -25,7 +25,7 @@ static void testQueue() {
     end = getTime();
 
     printf("size of queue: %d\n", queueSize(queue));
-    printf("duration = %lfs\n", (double) calcDuration(start, end));
+    printf("duration = %lfs\n", calcDuration(start, end));
 
     if (!areArraysSame(array, tmpArray, ARRAY_SIZE)) {
         fprintf(stderr, "Arrays aren't same\n");

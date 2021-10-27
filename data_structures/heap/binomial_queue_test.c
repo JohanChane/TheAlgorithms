@@ -39,7 +39,7 @@ static void testBinQueue() {
     }
     /* printBinQueue(binQueue); */
     end = getTime();
-    printf("duration = %lfs\n", (double) calcDuration(start, end));
+    printf("duration = %lfs\n", calcDuration(start, end));
 
     binQueueDestroy(binQueue);
 }

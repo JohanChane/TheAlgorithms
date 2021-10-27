@@ -46,7 +46,7 @@ static void testBTree() {
     end = getTime();
     printf("After Deleting!\n");
     traverseBTree(btree);
-    printf("duration = %lfs\n", (double) calcDuration(start, end));
+    printf("duration = %lfs\n", calcDuration(start, end));
 
     btreeDestroy(btree);
 }

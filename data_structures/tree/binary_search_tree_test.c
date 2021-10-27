@@ -47,7 +47,7 @@ static void testBst() {
     }
     printBst(binSearchTree);
     end = getTime();
-    printf("duration = %lfs\n", (double) calcDuration(start, end));
+    printf("duration = %lfs\n", calcDuration(start, end));
 }
 
 static void printBst(BinSearchTree binSearchTree) {

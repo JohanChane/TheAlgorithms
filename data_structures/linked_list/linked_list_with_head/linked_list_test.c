@@ -43,7 +43,7 @@ static void testLinkedList() {
     printf("size of list: %d\n", linkedListSize(list));
 
     end = getTime();
-    printf("duration = %lfs\n", (double) calcDuration(start, end));
+    printf("duration = %lfs\n", calcDuration(start, end));
 
     linkedListDestroy(list);
 }

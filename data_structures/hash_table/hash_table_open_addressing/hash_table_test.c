@@ -43,7 +43,7 @@ static void testHashTable() {
     end = getTime();
     printf("hashTable:\n");
     printHashTable(hashTable);
-    printf("duration = %lfs\n", (double) calcDuration(start, end));
+    printf("duration = %lfs\n", calcDuration(start, end));
 
     hashTableDestroy(hashTable);
 }

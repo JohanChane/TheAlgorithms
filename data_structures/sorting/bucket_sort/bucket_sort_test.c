@@ -19,7 +19,7 @@ static void testBucketSort() {
     bucketSort(array, ARRAY_SIZE);
     end = getTime();
     printArray(array, ARRAY_SIZE);
-    printf("duration = %lfs\n", (double) calcDuration(start, end));
+    printf("duration = %lfs\n", calcDuration(start, end));
 
     if (checkArrayOrder(array, ARRAY_SIZE, ASC) < 0) {
         fprintf(stderr, "checkArrayOrder failed\n");

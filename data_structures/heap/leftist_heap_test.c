@@ -47,9 +47,7 @@ static void testLeftistHeap() {
     }
     printLeftistHeap(leftistHeap);
     end = getTime();
-    // 取上限
-    duration = ((end - start) - 1) / CLOCKS_PER_SEC + 1;
-    printf("duration = %lfs\n", (double) duration);
+    printf("duration = %lfs\n", calcDuration(start, end));
 
     leftistHeapDestroy(leftistHeap);
 }

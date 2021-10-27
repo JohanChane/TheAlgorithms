@@ -44,7 +44,7 @@ static void testAvlTree() {
     }
     end = getTime();
     printAvlTree(avlTree);
-    printf("duration = %lfs\n", (double) calcDuration(start, end));
+    printf("duration = %lfs\n", calcDuration(start, end));
 }
 
 // 中序遍历
