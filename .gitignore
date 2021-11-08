@@ -3,6 +3,6 @@
 *.class
 *.exe
 
-Test/*
-!Test/Makefile
-!Test/makefile
+Test/*/*
+!Test/*/Makefile
+!Test/*/makefile
