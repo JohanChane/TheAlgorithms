@@ -1,0 +1,5 @@
+add_project_executable(circular_linked_list "${CMAKE_CURRENT_SOURCE_DIR}/circular_linked_list" algo_lib)
+add_project_executable(double_linked_list_no_head "${CMAKE_CURRENT_SOURCE_DIR}/double_linked_list_no_head" algo_lib)
+add_project_executable(double_linked_list_with_head "${CMAKE_CURRENT_SOURCE_DIR}/double_linked_list_with_head" algo_lib)
+add_project_executable(linked_list_no_head "${CMAKE_CURRENT_SOURCE_DIR}/linked_list_no_head" algo_lib)
+add_project_executable(linked_list_with_head "${CMAKE_CURRENT_SOURCE_DIR}/linked_list_with_head" algo_lib)

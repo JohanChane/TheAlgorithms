@@ -1,0 +1,6 @@
+add_project_executable(avl_tree "${CMAKE_CURRENT_SOURCE_DIR}/avl_tree" algo_lib)
+add_project_executable(binary_search_tree "${CMAKE_CURRENT_SOURCE_DIR}/binary_search_tree" algo_lib)
+add_project_executable(btree "${CMAKE_CURRENT_SOURCE_DIR}/btree" algo_lib)
+add_project_executable(huffman_tree "${CMAKE_CURRENT_SOURCE_DIR}/huffman_tree" algo_lib)
+add_project_executable(red_black_tree "${CMAKE_CURRENT_SOURCE_DIR}/red_black_tree" algo_lib)
+add_project_executable(splay_tree "${CMAKE_CURRENT_SOURCE_DIR}/splay_tree" algo_lib)

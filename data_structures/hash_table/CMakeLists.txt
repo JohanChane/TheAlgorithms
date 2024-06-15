@@ -1,0 +1,2 @@
+add_project_executable(hash_table_open_addressing "${CMAKE_CURRENT_SOURCE_DIR}/hash_table_open_addressing" algo_lib)
+add_project_executable(hash_table_separate_chaining "${CMAKE_CURRENT_SOURCE_DIR}/hash_table_separate_chaining" algo_lib)
