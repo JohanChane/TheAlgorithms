@@ -89,7 +89,7 @@ $$
 
 希尔排序的计算比较复杂。至于最坏情形的时间复杂度，[有的资料](https://www.bigocheatsheet.com/)说是 $(N\log (N))^{2}$，而《数据结构与算法分析：C 语言描述》说是 $N^{2}$。
 
-堆排序的平均时间复杂度是，$\log_{2} N + \log_{2} (N - 1), + \cdots + log_{2} 1 = \Theta(\log_{2} (N!)) = O(N\log N)$。
+堆排序的平均时间复杂度是，$\log_{2} N + \log_{2} (N - 1), + \cdots + \log_{2} 1 = \Theta(\log_{2} (N!)) = O(N\log N)$。
 
 二叉堆的建堆的时间复杂度是，$O(N)$。
 
@@ -215,15 +215,19 @@ ref: [一文弄懂计数排序算法！](https://www.cnblogs.com/xiaochuan94/p/1
 
 *对 Knuth 的改进。*
 
-设 BTree 的最小度数（minimum Degree）为 t (t >= 2)。
+设 BTree 的最小度数（minimum Degree）为 t (t >= 2)。t 取决于磁盘的 block 大小。
 
 叶子节点：指向儿子的指针都为 NULL 的节点。
 
-1. 每个节点（除了 root）有 [t - 1, 2t - 1] 个 keys；
-2. 每个内部节点（除了根节点）有 [t, 2t] 个儿子。
-3. 当 BTree 不为空时，根节点至少有 1 个 key。至多有 2t 儿子。
-4. 左儿子的 key <= key <= 右儿子的 key。
-5. 所有的叶子节点都有同样的深度，与树的高度相同。
+定义:
+1. 所有叶子节点同层。
+2. 根节点至少有 1 个 key。非根节点至少 `t - 1` 个 key。
+3. 每个节点至多有 `2t - 1` 个节点。
+7. 左儿子的 key <= key <= 右儿子的 key。
+
+根据上面可知, 非根节点的内部至少有 [t - 1, 2t - 1] 个 keys, [t, 2t] 个儿子节点。
+
+See [ref](https://www.geeksforgeeks.org/introduction-of-b-tree-2/)
 
 #### 操作
 
