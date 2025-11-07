@@ -367,25 +367,7 @@ ref: [红黑树](https://zh.wikipedia.org/zh-hans/%E7%BA%A2%E9%BB%91%E6%A0%91)
 
 1.  以下的旋转和变换颜色不仅可以让红黑树保持二叉搜索树的特性，还可保持红黑树的特性:
 
-    -   ![](./images/ds-rbtree-rotate1.png)
-    -   条件：当 X（B）, X-LC（B）, X-RC（R）时。
-    -   操作：将 X 左旋。之后将 X 涂红，X-RC 涂黑（或者 X 与 X-RC 互换颜色）。
-    -   分析：
-
-        1.  X-RC 子树的父节点不会由从黑变红。这样就不会出现父红子红的情况。
-        2.  因为 `h(X-RC) = h(X-LC)`，所以 X-RC', X' 子树是红黑子树。因为 X-LC' 子树没改变过，所以也是红黑子树。
-        3.  X 子树的根节点的颜色与 X-RC' 子树的根节点的相同。`h(XR') = h(X)`。
-
-2.  以下的旋转和变换颜色使 N' 的兄弟子树的 h 减 1:
-
-    -   ![](./images/ds-rbtree-rotate2.png)
-    -   条件：当 N（右；B）, P, LS（B）, LS-LC（R）。
-    -   操作：P 右旋，P 和 LS 交换颜色，LS-LC 变黑。
-    -   分析：
-
-        1.  LS-RC 子树的父节点不会由黑变红。
-        2.  因为 `h(LS-RC 子树) = h(N) - 1`，所以删除 N 后，P', LS' 子树是一棵红黑子树。
-        3.  P' 子树的根节点的颜色与 LS' 子树的根节点的相同。`h(LS') = h(P)`
+![](./images/ds-rbtree-rotate1.png)
 
 #### 红黑树的插入
 
@@ -413,6 +395,11 @@ ref: [红黑树](https://zh.wikipedia.org/zh-hans/%E7%BA%A2%E9%BB%91%E6%A0%91)
     2.  当删除的节点是一个叶子节点时，补上的节点是一个 Nil 节点。这时树就不平衡了，所以补上的节点成为当前平衡点（N）。
 
 [source code](../data_structures/tree/red_black_tree/red_black_tree.h)
+
+
+#### 详情请查看
+
+[drawio](./rbtree.drawio)
 
 ## Heap
 

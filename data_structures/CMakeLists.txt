@@ -1,5 +1,5 @@
-cmake_minimum_required(VERSION 3.15)
-project(data_structures VERSION 0.1.0)
+cmake_minimum_required(VERSION 3.10)
+project(data_structures)
 
 set(project_dir "..")
 include(${project_dir}/cmake_utils/cmake_utils.cmake)
