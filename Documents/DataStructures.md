@@ -399,7 +399,7 @@ ref: [红黑树](https://zh.wikipedia.org/zh-hans/%E7%BA%A2%E9%BB%91%E6%A0%91)
 
 #### 详情请查看
 
-[drawio](./rbtree.drawio)
+[drawio](https://app.diagrams.net/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FJohanChane%2FTheAlgorithms%2Frefs%2Fheads%2Fmain%2FDocuments%2Frbtree.drawio#%7B%22pageId%22%3A%223KYhqsyrhnYVesPA3fyI%22%7D)
 
 ## Heap
 
